@@ -27,7 +27,8 @@ typedef struct convert conver_t;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int format_rec(const char *form, conver_t function_list[], va_list argument_list);
+int format_rec(const char *form, conver_t function_list[],
+		va_list argument_list);
 int printf_p(va_list);
 int printf_int(va_list);
 int printf_C(va_list);

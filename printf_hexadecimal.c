@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * printf_hexadecimal - Prints a representation of a decimal number on base16 lowercase
+ * printf_hexadecimal - Prints a representation of a decimal number
+ * on base16 lowercase
  * @l: List of the arguments
  * Return: Number of characters printed
  */

@@ -57,7 +57,7 @@ char *con(unsigned long int number, int b, int l)
 	char *p;
 
 	r = (l)
-                ? "0123456789abcdef"
+		? "0123456789abcdef"
 		: "0123456789ABCDEF";
 	p = &a[49];
 	*p = NUL;
