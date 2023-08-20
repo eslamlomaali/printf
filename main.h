@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+#include <string.h>
 
 #define NULL_STRING "(null)"
 #define NUL '\0'
@@ -30,11 +31,11 @@ int _putchar(char c);
 int format_rec(const char *form, conver_t function_list[],
 		va_list argument_list);
 int printf_p(va_list);
-int printf_int(va_list);
-int printf_C(va_list);
-int printf_sstring(va_list);
-int printf_b(va_list);
-int printf_unsigned_int(va_list);
+int printf_int(va_list l);
+int printf_C(va_list l);
+int printf_sstring(va_list l);
+int printf_b(va_list l);
+int printf_unsigned_int(va_list l);
 int printf_octal(va_list l);
 int printf_hexadecimal(va_list l);
 int printf_HEXADECIMAL(va_list l);
