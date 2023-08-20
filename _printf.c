@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 		{"%", printf_p},
 		{"d", printf_int},
 		{"i", printf_int},
-		{"c", printf_char},
+		{"c", printf_C},
 		{"s", printf_sstring},
 		{"b", printf_b},
 		{"u", printf_unsigned_int},
@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(argument_list, format);
-	p = format_rec(form, conver_t function_list[], argument_list);
+	p = format_rec(format, function_list, argument_list);
 	va_end(argument_list);
 	return (p);
 }

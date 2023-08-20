@@ -9,7 +9,7 @@
 int printf_SString(va_list value)
 {
 	register short length = 0;
-	char *r, *a = va_arg(va, char *);
+	char *r, *a = va_arg(value, char *);
 	int c;
 
 	if (!a)

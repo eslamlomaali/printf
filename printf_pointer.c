@@ -14,7 +14,7 @@ int printf_pointer(va_list value)
 	int y;
 	int z;
 
-	p = va_arg(val, void*);
+	p = va_arg(value, void*);
 	if (p == NULL)
 	{
 		for (z = 0; c[z] != '\0'; z++)
