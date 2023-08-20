@@ -41,7 +41,7 @@ char *reverse_s(char *a)
 	if (d == NULL)
 		return (NULL);
 
-	_memcpy(d, a, reverse);
+	memcpy(d, a, reverse);
 	for (main = 0; main < reverse; main++, reverse--)
 	{
 		c = d[reverse - 1];
