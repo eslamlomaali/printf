@@ -15,6 +15,6 @@ int printf_sstring(va_list l)
 	if (string == NULL)
 		string = "(null)";
 	for (x = 0; string[x] != '\0'; x++)
-		_putchar(str[x]);
+		_putchar(string[x]);
 	return (x);
 }
