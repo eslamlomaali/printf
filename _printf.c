@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(argument_list, format);
-	p = format_rec(format, function_list, argument_list);
+	p = format_rec(form, function_list, argument_list);
 	va_end(argument_list);
 	return (p);
 }
