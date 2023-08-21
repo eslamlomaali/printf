@@ -12,7 +12,7 @@ int printf_r(va_list l)
 	int k;
 	char *string;
 	char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char z[] = "ANASSANAASANASSANAASAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+	char z[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	string = va_arg(l, char *);
 	if (string == NULL)
