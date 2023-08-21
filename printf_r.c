@@ -11,7 +11,7 @@ int printf_r(va_list l)
 	int a;
 	int k;
 	char *string;
-	char c[] = "EEEEEEEEEEEEEEEEEEEEEEEEEEslameslameslameslmaeeslame";
+	char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char z[] = "ANASSANAASANASSANAASAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 
 	string = va_arg(l, char *);
