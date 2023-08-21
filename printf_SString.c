@@ -10,26 +10,31 @@ int printf_SString(va_list value)
 {
 	register short length = 0;
 	char *r, *a = va_arg(value, char *);
-	int c;
+	int i;
 
 	if (!a)
 		return (_puts(NULL_STRING));
-	for (; *a; a++)
+
+	for (i = 0; a[i]; i++)
 	{
-		if (NotAlpha(*a))
+		if (NotAlpha(a[i]))
 		{
+			int c = 0;
+
 			c += _puts("\\x");
-			r = con(*a, 16, 0);
+			r = con(a[i], 16, 0);
 			if (!r[1])
 				length += _putchar('0');
 			length += _puts(r);
+			free(r);
 		}
 		else
-			length += _putchar(*a);
+		{
+			length += _putchar(a[i]);
+		}
 	}
 	return (length);
 }
-
 /**
  * NotAlpha - determines if char is a non-
  * alphanumeric
